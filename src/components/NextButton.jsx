@@ -1,5 +1,4 @@
 
-
 function NextButton({ idCharacter, setIdCharacter }) {
     const nextCharacter = () => setIdCharacter(idCharacter + 1)
 
