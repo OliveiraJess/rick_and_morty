@@ -1,3 +1,4 @@
+import "../css/characterCard.css"
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
@@ -19,10 +20,10 @@ function CharacterCard({ idCharacter }) {
 
     return (
         <div>
-            {Object.entries(infoToShow).map(([key, value]) => { return (<p>{key}: {character[value]}</p>) })}
-
+        <div className='character__card'>
+            {Object.entries(infoToShow).map(([key, value]) => { return (<p >{key}: {character[value]}</p>) })}
             <img src={character.image} alt="character-img" />
-
+        </div>
         </div>
     )
 }

@@ -1,0 +1,13 @@
+@import "./variables.css";
+
+.character__card {
+    font-family: var(--montserrat);
+}
+
+.character__card p {
+    padding: 0.3rem;
+}
+
+.character__card img {
+    padding: 1rem;
+}
