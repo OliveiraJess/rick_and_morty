@@ -1,20 +1,19 @@
-import './App.css';
+import "../src/css/reset.css";
 import HomePage from './pages/HomePage';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Routes,
+  Route
 } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
-
-        <Route path='/home'>
-          <HomePage />
-        </Route>
-
+        <Routes>
+          {/* <Route path={LOGIN} element={< PageLogin />} /> */}
+          <Route path='/' element={<HomePage />} />
+        </Routes>
       </Router>
     </div>
   );
