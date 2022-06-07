@@ -5,6 +5,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import CharacterAllPage from "./pages/CharacterAllPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           {/* <Route path={LOGIN} element={< PageLogin />} /> */}
           <Route path='/' element={<HomePage />} />
+          <Route path='/personagens' element={<CharacterAllPage />} />
         </Routes>
       </Router>
     </div>

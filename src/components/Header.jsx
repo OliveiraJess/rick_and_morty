@@ -1,9 +1,11 @@
 import "../css/header.css"
 import "../css/button.css"
+import { Link } from "react-router-dom"
 
 function Header() {
     return (
         <header className="header">
+            <img className="logo" src="../img/rick-and-morty.jpg" alt="Rick And Morty" />
             <div className="search">
                 <label for="search">Pesquisar Personagens</label>
                 <input type="search" id="search" name="search" />
@@ -11,8 +13,8 @@ function Header() {
             </div>
             <nav className="menu">
                 <ul className="menu__list">
-                    <li className="menu__list__items">Home</li>
-                    <li className="menu__list__items">Detalhes</li>
+                    <li className="menu__list__items"><Link classname="menu__link" to="/">Home</Link></li>
+                    <li className="menu__list__items"><Link classname="menu__link" to="personagens">Personagens</Link></li>
                 </ul>
             </nav>
 

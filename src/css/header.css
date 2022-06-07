@@ -11,8 +11,14 @@
 
 }
 
+.logo {
+    flex-direction: row;
+    width         : 120px;
+}
+
 .search {
     flex-direction: row;
+    display       : none;
 }
 
 .menu {
@@ -30,3 +36,10 @@
     margin-right  : 0;
     padding       : 0 1rem;
 }
+
+.menu__list__items:hover {
+    cursor       : pointer;
+    border-bottom: 2px solid var(--verde);
+    text-decoration: none;
+}
+
