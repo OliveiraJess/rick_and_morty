@@ -1,0 +1,32 @@
+@import "../css/variables.css";
+
+
+.header {
+    align-items     : center;
+    background-color: var(--roxo);
+    display         : flex;
+    justify-content : space-between;
+    padding         : 1rem 2rem 0.5rem 2rem;
+    font-family     : var(--montserrat);
+
+}
+
+.search {
+    flex-direction: row;
+}
+
+.menu {
+    flex-direction: row;
+
+}
+
+.menu__list {
+    display: flex;
+
+}
+
+.menu__list__items {
+    flex-direction: row;
+    margin-right  : 0;
+    padding       : 0 1rem;
+}
