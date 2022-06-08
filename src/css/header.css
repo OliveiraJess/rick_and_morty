@@ -13,7 +13,7 @@
 
 .logo {
     flex-direction: row;
-    width         : 120px;
+    width         : 180px;
 }
 
 .search {
@@ -35,10 +35,11 @@
     flex-direction: row;
     margin-right  : 0;
     padding       : 0 1rem;
+    font-weight: bold;
 }
 
 .menu__list__items:hover {
     cursor         : pointer;
-    border-bottom  : 2px solid var(--verde);
+    border-bottom  : 2px solid var(--verde-escuro);
     text-decoration: none;
 }

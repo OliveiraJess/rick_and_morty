@@ -1,10 +1,15 @@
+import "../css/charactersAll.css"
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function Test() {
+
+function CharacterAll() {
 
     const baseUrl = "https://rickandmortyapi.com/api/character/"
 
+
+    const page = 3
     // same as setting up state
     // const [count, setCount] = useState(0)
     const [characters, setcharacters] = useState([])
@@ -24,7 +29,7 @@ function Test() {
     const renderCharacters = () => {
         return characters.map((character, index) => {
             return (
-                <div>
+                <div >
                     <li><img src={character.image} alt={character.name} /></li>
                     <li key={index}>{character.id} {character.name}</li>
                     <li key={index}>{character.status}</li>
@@ -40,7 +45,8 @@ function Test() {
     const addEachcharacters = (response) => {
         return response.data.results.map(async (character) => {
             const response = await axios.get(character.url)
-            const {image} = response.data
+            const { image } = response.data
+            const pages = response.info
             character.image = image
             return character
         })
@@ -58,13 +64,14 @@ function Test() {
 
     } else {
         return (
-            <>
-                <h1 >Todos os personagens</h1>
+            <div>
+            <div className="container-card">
                 {renderCharacters()}
-                <button >proxima pagina</button>
-            </>
+            </div>
+            <button className="button">proxima pagina</button>
+            </div>
         )
     }
 }
 
-export default Test;
+export default  CharacterAll;

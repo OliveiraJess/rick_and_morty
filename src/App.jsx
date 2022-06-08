@@ -6,6 +6,7 @@ import {
   Route
 } from 'react-router-dom';
 import CharacterAllPage from "./pages/CharacterAllPage";
+import {HOME, PERSONAGENS} from "./routes"
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <Router>
         <Routes>
           {/* <Route path={LOGIN} element={< PageLogin />} /> */}
-          <Route path='/' element={<HomePage />} />
-          <Route path='/personagens' element={<CharacterAllPage />} />
+          <Route path={HOME} element={<HomePage />} />
+          <Route path={PERSONAGENS} element={<CharacterAllPage />} />
         </Routes>
       </Router>
     </div>

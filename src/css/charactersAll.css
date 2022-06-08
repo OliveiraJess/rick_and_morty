@@ -1,0 +1,11 @@
+@import "./variables.css";
+
+.container-card {
+    background-color: var(--roxo);
+    display         : flex;
+    flex-wrap       : wrap;
+    font-family     : var(--montserrat);
+    justify-content : center;
+    padding         : 1rem;
+}
+
