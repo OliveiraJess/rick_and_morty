@@ -6,7 +6,7 @@ import { HOME, PERSONAGENS } from "../routes"
 function Header() {
     return (
         <header className="header">
-            <img className="logo" src="../img/rick-and-morty.png" alt="Rick And Morty" />
+            <img className="logo" src="../img/logo-rick-and-morty.png" alt="Rick And Morty" />
             <div className="search">
                 <label for="search">Pesquisar Personagens</label>
                 <input type="search" id="search" name="search" />

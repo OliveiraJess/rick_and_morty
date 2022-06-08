@@ -3,12 +3,11 @@
 
 .header {
     align-items     : center;
-    background-color: var(--roxo);
+    background-color: var(--verde-escuro);
     display         : flex;
     justify-content : space-between;
-    padding         : 1rem 2rem 0.5rem 2rem;
+    padding         : 0.5rem 2rem 0.5rem 2rem;
     font-family     : var(--montserrat);
-
 }
 
 .logo {
@@ -35,11 +34,12 @@
     flex-direction: row;
     margin-right  : 0;
     padding       : 0 1rem;
-    font-weight: bold;
+    font-weight   : bold;
+   text-transform: uppercase;
 }
 
 .menu__list__items:hover {
     cursor         : pointer;
-    border-bottom  : 2px solid var(--verde-escuro);
+    border-bottom  : 2px solid var(--verde);
     text-decoration: none;
 }
