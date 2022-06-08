@@ -1,11 +1,42 @@
 @import "./variables.css";
 
-.container-card {
-    background-color: var(--roxo);
+
+.container__container-card {
     display         : flex;
-    flex-wrap       : wrap;
-    font-family     : var(--montserrat);
-    justify-content : center;
-    padding         : 1rem;
+    flex-direction  : column;
+    background-color: var(--roxo);
 }
 
+.container-card {
+
+    display        : flex;
+    flex-wrap      : wrap;
+    font-family    : var(--montserrat);
+    justify-content: center;
+    padding        : 1rem;
+}
+
+.container-card__card {
+    border: 5px solid var(--verde-escuro);
+    margin: 0.5rem;
+}
+
+.container-card__card:hover,
+.container-card__image:hover {
+    border-color: var(--verde);
+}
+
+.container-card__image {
+    border-bottom: 3px solid var(--verde-escuro);
+    padding      : 0.3rem;
+}
+
+.container-card__list {
+    padding-bottom: 0.2rem;
+    text-align    : center;
+}
+
+.container-card__button {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}

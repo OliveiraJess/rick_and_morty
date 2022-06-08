@@ -18,7 +18,6 @@ function Header() {
                     <li className="menu__list__items"><Link to={PERSONAGENS}>Personagens</Link></li>
                 </ul>
             </nav>
-
         </header>
     )
 }

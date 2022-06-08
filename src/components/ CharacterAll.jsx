@@ -29,14 +29,14 @@ function CharacterAll() {
     const renderCharacters = () => {
         return characters.map((character, index) => {
             return (
-                <div >
-                    <li><img src={character.image} alt={character.name} /></li>
-                    <li key={index}>{character.id} {character.name}</li>
-                    <li key={index}>{character.status}</li>
-                    <li key={index}>{character.species}</li>
-                    <li key={index}>{character.gender}</li>
-                    <li key={index}>{character.origin.name}</li>
-                    <li key={index}>{character.location.name}</li>
+                <div className="container-card__card">
+                    <img className="container-card__image" src={character.image} alt={character.name} />
+                    <li className="container-card__list" key={index}>{character.id} - {character.name}</li>
+                    <li className="container-card__list" key={index}>{character.status}</li>
+                    <li className="container-card__list" key={index}>{character.species}</li>
+                    <li className="container-card__list" key={index}>{character.gender}</li>
+                    <li className="container-card__list" key={index}>{character.origin.name}</li>
+                    <li className="container-card__list" key={index}>{character.location.name}</li>
                 </div>
             )
         })
@@ -64,14 +64,16 @@ function CharacterAll() {
 
     } else {
         return (
-            <div>
-            <div className="container-card">
-                {renderCharacters()}
-            </div>
-            <button className="button">proxima pagina</button>
+            <div className="container__container-card">
+                <div className="container-card">
+                    {renderCharacters()}
+                </div>
+                <div className="container-card__button">
+                    <button className="button">Próxima Página</button>
+                </div>
             </div>
         )
     }
 }
 
-export default  CharacterAll;
+export default CharacterAll;
