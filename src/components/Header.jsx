@@ -13,8 +13,8 @@ function Header() {
             </div>
             <nav className="menu">
                 <ul className="menu__list">
-                    <li className="menu__list__items"><Link classname="menu__link" to="/">Home</Link></li>
-                    <li className="menu__list__items"><Link classname="menu__link" to="personagens">Personagens</Link></li>
+                    <li className="menu__list__items"><Link to="/">Home</Link></li>
+                    <li className="menu__list__items"><Link to="personagens">Personagens</Link></li>
                 </ul>
             </nav>
 

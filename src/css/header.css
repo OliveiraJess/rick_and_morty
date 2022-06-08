@@ -38,8 +38,7 @@
 }
 
 .menu__list__items:hover {
-    cursor       : pointer;
-    border-bottom: 2px solid var(--verde);
+    cursor         : pointer;
+    border-bottom  : 2px solid var(--verde);
     text-decoration: none;
 }
-
