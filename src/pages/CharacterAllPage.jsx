@@ -3,7 +3,7 @@ import Header from "../components/Header"
 import  CharacterAll from "../components/ CharacterAll"
 
 function CharacterAllPage() {
-    const [nextPage, setNextPage] = useState(1)
+
 
     return (
 
@@ -15,7 +15,7 @@ function CharacterAllPage() {
                 <h1 className="title">Rick and Morty: Personagens</h1>
             </div>
             <di>
-                <CharacterAll nextPage={nextPage}/>
+                <CharacterAll/>
             </di>
         </div>
     )
