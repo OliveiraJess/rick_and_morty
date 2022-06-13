@@ -6,8 +6,13 @@ import axios from 'axios';
 function CharacterAll() {
 
     const [allCharacter, setAllCharacter] = useState([])
+    const [nextPage, setNextPage] = useState("")
 
-    const baseUrl = "https://rickandmortyapi.com/api/character/"
+    const baseUrl = `https://rickandmortyapi.com/api/character/?page=`
+
+    const addNextPage = () => setNextPage(parseInt(nextPage + 1))
+
+
 
     useEffect(() => {
         data();
@@ -16,7 +21,7 @@ function CharacterAll() {
 
     const data = async () => {
 
-        const response = await fetch(baseUrl);
+        const response = await fetch(baseUrl + nextPage);
         const { results } = await response.json()
         setAllCharacter(results)
     }
@@ -38,7 +43,7 @@ function CharacterAll() {
                 ))}
             </div>
             <div className="container-card__button">
-                <button className="button" >Próxima Página</button>
+                <button className="button" onClick={addNextPage}>Próxima Página</button>
             </div>
         </div>
     )
