@@ -3,7 +3,7 @@
 
 .header {
     align-items     : center;
-    background-color: var(--verde-escuro);
+    background-color: var(--azul);
     display         : flex;
     justify-content : space-between;
     padding         : 0.5rem 2rem 0.5rem 2rem;
@@ -17,6 +17,19 @@
 
 .search {
     flex-direction: row;
+    font-weight: bold;
+}
+
+.search__input {
+    background-color: var(--branco);
+    border          : 2px solid var(--preto);
+    border-radius   : 5px;
+    margin-left     : 0.5rem;
+}
+
+.search__input:focus {
+    background-color: var(--azul);
+    font-family     : var(--montserrat);
 }
 
 .menu {
@@ -33,6 +46,7 @@
     margin-right  : 0;
     padding       : 0 1rem;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .menu__list__items:hover {
