@@ -2,7 +2,7 @@ import "../css/charactersAll.css"
 import React, { useState, useEffect } from 'react';
 
 
-function CharacterAll() {
+function Home() {
 
     const [allCharacter, setAllCharacter] = useState([])
     const [nextPage, setNextPage] = useState(1)
@@ -10,6 +10,7 @@ function CharacterAll() {
     const baseUrl = `https://rickandmortyapi.com/api/character/?page=`
 
     const addNextPage = () => setNextPage(parseInt(nextPage + 1))
+
     const addPreviousPage = () => setNextPage(parseInt(nextPage - 1))
 
     useEffect(() => {
@@ -26,9 +27,6 @@ function CharacterAll() {
 
     const features = [
         'name',
-        'status',
-        'species',
-        'gender'
     ]
 
     return (
@@ -36,7 +34,6 @@ function CharacterAll() {
             <div className="container-card">
                 {allCharacter.map(character => (
                     <div className="container-card__card">
-                        <img className="container-card__image" src={character.image} alt={character.name} />
                         {
                             features.map(
                                 feature => (
@@ -44,17 +41,19 @@ function CharacterAll() {
                                 )
                             )
                         }
-                        <li className="container-card__list">{character.origin.name}</li>
-                        <li className="container-card__list">{character.location.name}</li>
+                        <img className="container-card__image" src={character.image} alt={character.name} />
+                        <div className="container-card__button">
+                            <button className="button button-details">Detalhes</button>
+                        </div>
                     </div>
                 ))}
             </div>
             <div className="container-card__button">
                 <button className="button" onClick={addPreviousPage}>Voltar Página</button>
-                <button className="button" onClick={addNextPage}>Próxima Página</button>
+                <button className="button" onClick={addNextPage}>Avançar Página</button>
             </div>
         </div>
     )
 }
 
-export default CharacterAll;
+export default Home;

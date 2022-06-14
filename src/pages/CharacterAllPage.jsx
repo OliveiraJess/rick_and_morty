@@ -15,7 +15,7 @@ function CharacterAllPage() {
                 <h1 className="title">Rick and Morty: Personagens</h1>
             </div>
             <di>
-                <CharacterAll/>
+                {/* <CharacterAll/> */}
             </di>
         </div>
     )

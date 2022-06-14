@@ -8,7 +8,6 @@
 }
 
 .container-card {
-
     display        : flex;
     flex-wrap      : wrap;
     font-family    : var(--montserrat);
@@ -18,6 +17,7 @@
 
 .container-card__card {
     border: 5px solid var(--verde-escuro);
+    cursor: pointer;
     margin: 0.5rem;
 }
 
@@ -27,16 +27,21 @@
 }
 
 .container-card__image {
-    border-bottom: 3px solid var(--verde-escuro);
-    padding      : 0.3rem;
+    padding: 0.3rem;
 }
 
 .container-card__list {
     padding-bottom: 0.2rem;
+    padding-top   : 0.2rem;
     text-align    : center;
 }
 
 .container-card__button {
-    text-align: center;
+    text-align   : center;
     margin-bottom: 0.5rem;
+}
+
+.button-details {
+    margin: 0;
+    width: 95%;
 }

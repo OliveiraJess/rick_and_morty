@@ -17,29 +17,26 @@
 
 .search {
     flex-direction: row;
-    display       : none;
 }
 
 .menu {
     flex-direction: row;
-
 }
 
 .menu__list {
     display: flex;
-
 }
 
 .menu__list__items {
     flex-direction: row;
+    font-weight   : bold;
     margin-right  : 0;
     padding       : 0 1rem;
-    font-weight   : bold;
-   text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .menu__list__items:hover {
-    cursor         : pointer;
     border-bottom  : 2px solid var(--verde);
+    cursor         : pointer;
     text-decoration: none;
 }
