@@ -23,6 +23,23 @@ function Home() {
     }, [nextPage])
 
 
+    // function addNextPage() {
+
+    //     if (1 == nextPage || nextPage <= 41) {
+    //        setNextPage(parseInt(nextPage + 1))
+           
+    //     }
+
+    //     return setNextPage(42)
+    // }
+
+    // function addPreviousPage() {
+    //     if (2 == nextPage || nextPage <= 42) {
+    //         setNextPage(parseInt(nextPage - 1))
+    //     }
+    //     return setNextPage(1)
+    // }
+
     const data = async () => {
 
         const response = await fetch(baseUrl + nextPage);
@@ -56,7 +73,8 @@ function Home() {
                         }
                         <img className="container-card__image" src={character.image} alt={character.name} />
                         <div className="container-card__button">
-                            <button className="button button-details" onClick={Details}>Detalhes</button>
+                            {/* <button className="button button-details" onClick={Details}>Detalhes</button> */}
+                            <Details/>
                         </div>
                     </div>
                 ))}
