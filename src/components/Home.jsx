@@ -1,5 +1,6 @@
 import "../css/charactersAll.css"
 import React, { useState, useEffect } from 'react';
+import Details from "./Details";
 
 
 function Home() {
@@ -55,7 +56,7 @@ function Home() {
                         }
                         <img className="container-card__image" src={character.image} alt={character.name} />
                         <div className="container-card__button">
-                            <button className="button button-details">Detalhes</button>
+                            <button className="button button-details" onClick={Details}>Detalhes</button>
                         </div>
                     </div>
                 ))}
