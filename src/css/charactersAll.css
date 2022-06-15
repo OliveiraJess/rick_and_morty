@@ -16,14 +16,14 @@
 }
 
 .container-card__card {
-    border: 5px solid var(--verde-escuro);
+    border: 5px solid var(--azul);
     cursor: pointer;
     margin: 0.5rem;
 }
 
 .container-card__card:hover,
 .container-card__image:hover {
-    border-color: var(--verde);
+    border-color: var(--verde-escuro);
 }
 
 .container-card__image {

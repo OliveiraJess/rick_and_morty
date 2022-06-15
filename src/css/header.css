@@ -50,7 +50,7 @@
 }
 
 .menu__list__items:hover {
-    border-bottom  : 2px solid var(--verde);
+    border-bottom  : 2px solid var(--verde-escuro);
     cursor         : pointer;
     text-decoration: none;
 }

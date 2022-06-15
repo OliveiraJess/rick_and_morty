@@ -7,11 +7,15 @@ function Home() {
     const [allCharacter, setAllCharacter] = useState([])
     const [nextPage, setNextPage] = useState(1)
 
+    const [info, setInfo] = useState({})
+
     const baseUrl = `https://rickandmortyapi.com/api/character/?page=`
+    const urlApi = `https://rickandmortyapi.com/api/character`
 
     const addNextPage = () => setNextPage(parseInt(nextPage + 1))
-
     const addPreviousPage = () => setNextPage(parseInt(nextPage - 1))
+
+    // ?page=43
 
     useEffect(() => {
         data();
@@ -23,14 +27,22 @@ function Home() {
         const response = await fetch(baseUrl + nextPage);
         const { results } = await response.json()
         setAllCharacter(results)
+
+        const responseInfo = await fetch(urlApi);
+        const { info } = await responseInfo.json()
+        setInfo(info)
     }
+
 
     const features = [
         'name',
     ]
 
+
     return (
         <div className="container__container-card">
+            <p>{info.pages}</p>
+            <p>{info.count}</p>
             <div className="container-card">
                 {allCharacter.map(character => (
                     <div className="container-card__card">
