@@ -62,8 +62,8 @@ function Home() {
                 ))}
             </div>
             <div className="container-card__button">
-                <button className="button" onClick={addPreviousPage}>Voltar Página</button>
-                <button className="button" onClick={addNextPage}>Avançar Página</button>
+                <button className="button button-pages" onClick={addPreviousPage}>Voltar Página</button>
+                <button className="button button-pages" onClick={addNextPage}>Avançar Página</button>
             </div>
         </div>
     )
