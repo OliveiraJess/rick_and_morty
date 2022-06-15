@@ -56,7 +56,6 @@ function Home() {
         'name',
     ]
 
-
     return (
         <div className="container__container-card">
             <p>{info.pages}</p>

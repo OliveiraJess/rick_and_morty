@@ -1,44 +1,44 @@
 @import "./variables.css";
 
 .modal {
-    width           : 100%;
-    height          : 100%;
-    position        : absolute;
-    top             : 0;
-    left            : 0;
-    z-index         : 10;
+    align-items     : center;
     background-color: var(--preto);
     display         : flex;
+    height          : 100%;
     justify-content : center;
-    align-items     : center;
+    left            : 0;
+    position        : absolute;
+    top             : 0;
+    width           : 100%;
+    z-index         : 10;
 
     .modal__container {
         background-color: var(--roxo);
-        color           : var(--preto);
-        width           : 80%;
-        height          : 80%;
         border-radius   : 20px;
+        color           : var(--preto);
+        height          : 80%;
+        width           : 80%;
 
         .modal__button {
+            align-items     : center;
             background-color: transparent;
             border          : none;
-            outline         : none;
-            width           : 32px;
-            height          : 32px;
-            right           : calc(-100% + 64px);
             cursor          : pointer;
-            top             : 16px;
             display         : flex;
+            height          : 32px;
+            outline         : none;
             position        : relative;
-            align-items     : center;
+            right           : calc(-100% + 64px);
+            top             : 16px;
+            width           : 32px;
 
             &:before,
             &:after {
+                background-color: var(--preto);
                 content         : '';
+                height          : 24px;
                 position        : absolute;
                 width           : 2.5px;
-                height          : 24px;
-                background-color: var(--preto);
             }
 
             &:before {
