@@ -8,7 +8,6 @@
 
 .title {
     font-family   : var(--montserrat);
-    font-size     : 2.5rem;
     font-weight   : bold;
     text-align    : center;
     padding-bottom: 2.5rem;
@@ -24,4 +23,30 @@
     justify-content: center;
     margin         : 0.3rem;
     text-align     : center;
+}
+
+
+
+@media screen and (min-width: 320px) {
+    .title {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title {
+        font-size: 2.6rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .title {
+        font-size: 2.7rem;
+    }
 }
