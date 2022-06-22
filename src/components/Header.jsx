@@ -8,7 +8,7 @@ function Header() {
         <header className="header">
            <Link to={HOME}><img className="logo" src="../img/logo-rick-and-morty.png" alt="Rick And Morty" /></Link>
             <div className="search">
-                <label for="search">Pesquisar Personagens</label>
+                <label className="search__label" for="search">Pesquisar Personagens</label>
                 <input className="search__input" type="search" id="search" name="search" />
                 <button className="button">Pesquisar</button>
             </div>
