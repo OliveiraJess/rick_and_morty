@@ -1,3 +1,5 @@
+import "../css/charactersAll.css"
+import "../css/modal.scss"
 import React, { useState } from 'react';
 import CharacterCard from "./CharacterCard"
 import Modal from "./Modal"

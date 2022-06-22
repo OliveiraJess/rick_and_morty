@@ -2,12 +2,40 @@
 
 .character__card {
     font-family: var(--montserrat);
+    width: 100%;
 }
 
 .character__card li {
     padding: 0.3rem;
 }
 
-.character__card img {
-    padding: 1rem;
+
+@media screen and (min-width: 320px) {
+    .character__card img {
+        width  : 220px;
+        padding: 10px;
+    }
+
+    .character__card li {
+        font-size: 20px;
+        padding  : 3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .character__card img {
+        width  : 300px;
+        padding: 12px;
+    }
+
+    .character__card li {
+        font-size: 15px;
+        padding  : 3.5px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .character__card img {
+        width  : 320px;
+    }
 }

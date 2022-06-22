@@ -8,9 +8,9 @@
     justify-content : center;
     left            : 0;
     position        : absolute;
-    top             : 0;
+    top             : auto;
     width           : 100%;
-    z-index         : 10;
+    // z-index         : 10;
 
     .modal__container {
         background-color: var(--roxo);
@@ -60,4 +60,8 @@
     text-align    : center;
     padding-bottom: 1.5rem;
     padding-top   : 0.8rem;
+}
+
+@media screen and (min-width: 320px) {
+    
 }
