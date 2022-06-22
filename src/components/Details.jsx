@@ -3,9 +3,11 @@ import CharacterCard from "./CharacterCard"
 import Modal from "./Modal"
 
 
-function Details() {
+function Details({ character }) {
     const [modalIsVisible, setModalIsVisible] = useState(false)
     const [idCharacter, setIdCharacter] = useState(1)
+
+    
 
     return (
         <div>
@@ -13,9 +15,8 @@ function Details() {
             {modalIsVisible ?
                 <Modal onClose={() => setModalIsVisible(false)}>
                     <h2 className="title__modal">Detalhes do Personagem</h2>
-                    <CharacterCard idCharacter={idCharacter}/>
+                    <CharacterCard idCharacter={idCharacter} />
                 </Modal>
-                // <CharacterCard idCharacter={idCharacter}/> 
                 : null}
         </div>
     )

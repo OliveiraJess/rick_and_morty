@@ -15,9 +15,10 @@ function CharacterCard({ idCharacter }) {
     }, [idCharacter])
 
     const infoToShow = {
+        "Id": "id",
         "Nome": "name",
         "Status": "status",
-        "Especie": "species",
+        "Espécie": "species",
         "Genero": "gender",
     }
 
