@@ -5,15 +5,15 @@
     border        : 1px solid;
     border-radius : 5px;
     flex-direction: row;
+    font-family   : var(--montserrat);
     margin        : 0.2rem;
     text-align    : center;
-    font-family   : var(--montserrat);
 }
 
 .button:hover {
     cursor          : pointer;
-    transition-delay: 0.2s;
     background      : var(--verde-escuro);
+    transition-delay: 0.2s;
 }
 
 @media screen and (min-width: 320px) {
