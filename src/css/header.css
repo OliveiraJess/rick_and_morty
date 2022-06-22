@@ -62,6 +62,10 @@
         text-align    : center;
     }
 
+    .search__input {
+        font-size: 1.2rem;
+    }
+
     .menu {
         flex-direction: column;
         margin        : 1rem;
@@ -88,12 +92,13 @@
     }
 
     .search {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .search__label {
         flex-direction: row;
         padding       : 0.1rem;
+        font-size     : 1.2rem;
     }
 
     .search__input {
@@ -127,7 +132,8 @@
     }
 
     .search {
-        margin: 1.5rem;
+        flex-direction: row;
+        margin        : 1.5rem;
     }
 
     .search__label {
@@ -145,7 +151,7 @@
     .menu__list__items {
         flex-direction: row;
         margin-right  : 0;
-        padding       : 0 1rem;
+        padding       : 0 0.3rem;
     }
 }
 
@@ -155,7 +161,11 @@
     }
 
     .search__label {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+    }
+
+    .search__input {
+        font-size: 1.4rem;
     }
 
     .menu__list__items {
