@@ -1,15 +1,15 @@
 @import "./variables.css";
 
 .modal {
-    align-items     : center;
-    background-color: var(--preto);
-    display         : flex;
-    height          : 100%;
-    justify-content : center;
-    left            : 0;
-    position        : absolute;
-    top             : auto;
-    width           : 100%;
+    align-items        : center;
+    background-color   : var(--preto);
+    display            : flex;
+    height             : 100%;
+    justify-content    : center;
+    left               : 0;
+    position           : absolute;
+    top                : auto;
+    width              : 100%;
     // z-index         : 10;
 
     .modal__container {
@@ -54,10 +54,36 @@
 }
 
 .title__modal {
-    font-family   : var(--montserrat);
-    font-size     : 1.5rem;
-    font-weight   : bold;
-    text-align    : center;
-    padding-bottom: 1.5rem;
-    padding-top   : 0.8rem;
+    font-family      : var(--montserrat);
+    // font-size     : 1.5rem;
+    font-weight      : bold;
+    text-align       : center;
+    // padding-bottom: 1.5rem;
+    // padding-top   : 0.8rem;
+}
+
+@media screen and (min-width: 320px) {
+    .title__modal {
+        font-size: 1.2rem;
+        padding  : 1.0rem 0.1rem
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title__modal {
+        font-size: 1.3rem;
+        padding  : 1.0rem 0.2rem
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .title__modal {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .title__modal {
+        font-size     : 1.5rem;
+    }
 }
