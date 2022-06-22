@@ -43,10 +43,35 @@
 
 .button-details {
     margin: 0;
-    width: 95%;
+    width : 95%;
 }
 
-.button-pages {
-    width: 20%;
-    height: 30px;
+
+
+@media screen and (min-width: 320px) {
+    .button-pages {
+        width : 8rem;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .button-pages {
+        width : 10rem;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* .button-pages {
+        width : 10rem;
+        height: 40px;
+    } */
+}
+
+@media screen and (min-width: 1440px) {
+    .button-pages {
+        width : 13rem;
+        height: 50px;
+    }
 }

@@ -1,4 +1,5 @@
 import "../css/charactersAll.css"
+import "../css/button.css"
 import React, { useState, useEffect } from 'react';
 import Details from "./Details";
 
