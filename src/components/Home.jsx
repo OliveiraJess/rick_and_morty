@@ -59,9 +59,9 @@ function Home() {
 
     return (
         <div className="container__container-card">
-            <p>{info.pages}</p>
+            {/* <p>{info.pages}</p>
             <p>{info.count}</p>
-            <p>{allCharacter.id}</p>
+            <p>{allCharacter.id}</p> */}
             <div className="container-card">
                 {allCharacter.map(character => (
                     <div className="container-card__card">
