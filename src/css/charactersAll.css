@@ -19,6 +19,7 @@
     border: 5px solid var(--azul);
     cursor: pointer;
     margin: 0.5rem;
+    text-align: center;
 }
 
 .container-card__card:hover,
@@ -28,6 +29,7 @@
 
 .container-card__image {
     padding: 0.3rem;
+    align-items: center;
 }
 
 .container-card__list {
